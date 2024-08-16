@@ -12,7 +12,7 @@ IT 🇮🇹
 
 Questo progetto è parte dell'esame TypeScript per Start2Impact University.
 
-Il test prevedeva lo sviluppo di un sistema in Typecript, in grado di gestire una scuola di formazione professionale per migranti.
+Il test prevedeva lo sviluppo di un sistema in TypeScript, in grado di gestire una scuola di formazione professionale per migranti.
 Il sistema dovrà provvedere all'iscrizione dei migranti ai corsi di formazione e al collegamento alle offerte di lavoro con le aziende promotrici.
 
 Il codice è strutturato in 3 fasi: 
@@ -28,7 +28,7 @@ EN 🇬🇧
 
 This project is part of the TypeScript exam for Start2Impact University.
 
-The test involved the development of a system in Typecript that can manage a career school for migrants.
+The test involved the development of a system in TypeScript that can manage a career school for migrants.
 The system will have to provide enrollment of migrants in training courses and link job offers with sponsoring companies.
 
 The code is structured in 3 phases: 
