@@ -110,7 +110,7 @@ class Azienda implements IAzienda {
     }
 }
 
-//Applicazione 
+//Istanze e testing
 
 const migrante1 = new Partecipante('Anna', 'Antonyuk', 'Ucraina', 8, 'Buone', 'Informatica');
 const migrante2 = new Partecipante('Barbara', 'Bondarenko', 'Ucraina', 7, 'Ottime', 'Sartoria');
@@ -120,12 +120,12 @@ const migrante3 = new Partecipante('Christian', 'Chumak', 'Ucraina', 6, 'Suffici
 const corsoInformatica = new Corso('Programmazione base', 'Studio delle basi della programmazione', 'Informatica', 100);
 const corsoSartoria = new Corso('Cucito e modellistica', 'Studio e confezione base del capo sartoriale', 'Sartoria', 150);
 
+const WebCompany = new Azienda('Web Company', 'Informatica', 'Sviluppo Software e siti Web.', ['Developer Junior', 'Marketing Specialist']);
+const IlFilo = new Azienda('Il Filo', 'Sartoria', 'Produzione artigianale di abiti per donna, uomo e bambino.', ['Cucitore Junior', 'Addetto allo stiro'])
+
 migrante1.iscrivitiCorso(corsoInformatica);
 migrante2.iscrivitiCorso(corsoSartoria);
 migrante3.iscrivitiCorso(corsoInformatica);
-
-const WebCompany = new Azienda('Web Company', 'Informatica', 'Sviluppo Software e siti Web.', ['Developer Junior', 'Marketing Specialist']);
-const IlFilo = new Azienda('Il Filo', 'Sartoria', 'Produzione artigianale di abiti per donna, uomo e bambino.', ['Cucitore Junior', 'Addetto allo stiro'])
 
 WebCompany.offriPosizione(migrante1, 'Developer Junior');
 IlFilo.offriPosizione(migrante2, 'Cucitore Junior');
