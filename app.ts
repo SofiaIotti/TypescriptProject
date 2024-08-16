@@ -55,7 +55,7 @@ class Partecipante implements IPartecipante(){
     iscrivitiCorso(corso: ICorso): void{
         corso.aggiungiPartecipante(this);
         this.iscrizioni.push(corso);
-        appendOutput(`${this.nome} ${this.cognome} è ora iscritto al corso: "${corso.titolo}".`);
+        console.log(`${this.nome} ${this.cognome} è ora iscritto al corso: "${corso.titolo}".`);
     }
 }
 
@@ -76,7 +76,7 @@ class Corso implements ICorso {
 
     aggiungiPartecipante(partecipante: IPartecipante): void {
         this.elencoIscritti.push(partecipante);
-             appendOutput(`${partecipante.nome} ${partecipante.cognome} è stato aggiunto al corso: "${this.titolo}".`);
+             console.log(`${partecipante.nome} ${partecipante.cognome} è stato aggiunto al corso: "${this.titolo}".`);
     }
   stampaElencoIscritti(): void {
         let output = `Elenco degli iscritti al corso "${this.titolo}": `;
@@ -88,7 +88,7 @@ class Corso implements ICorso {
                 output += '.';
             }
         }
-        appendOutput(output);
+        console.log(output);
     }
 }
 
@@ -106,17 +106,7 @@ class Azienda implements IAzienda {
     }
     
     offriPosizione(partecipante: IPartecipante, posizione: string): void {
-        appendOutput(`L'azienda ${this.nome} offre una posizione come ${posizione} a ${partecipante.nome} ${partecipante.cognome}.`);
-    }
-}
-
-// Stampa del contenuto
-
-function appendOutput(output: string) {
-    const outputDiv = document.getElementById('body');
-    if (outputDiv) {
-        const p = document.createElement('p');
- p.textContent = output;     outputDiv.appendChild(p);
+        console.log(`L'azienda ${this.nome} offre una posizione come ${posizione} a ${partecipante.nome} ${partecipante.cognome}.`);
     }
 }
 
