@@ -8,6 +8,8 @@ BUILT WITH: TypeScript.
 
 ------------------------------------------------------------------------------
 
+IT 🇮🇹
+
 Questo progetto è parte dell'esame TypeScript per Start2Impact University.
 
 Il test prevedeva lo sviluppo di un sistema in Typecript, in grado di gestire una scuola di formazione professionale per migranti.
@@ -21,6 +23,8 @@ Il codice è strutturato in 3 fasi:
 
 
 ------------------------------------------------------------------------------
+
+EN 🇬🇧
 
 This project is part of the TypeScript exam for Start2Impact University.
 
